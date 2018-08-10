@@ -4,6 +4,7 @@ GEM
     childprocess (0.9.0)
       ffi (~> 1.0, >= 1.0.11)
     ffi (1.9.25)
+    parallel (1.12.1)
     rubyzip (1.2.1)
     selenium-webdriver (3.6.0)
       childprocess (~> 0.5)
@@ -13,10 +14,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  parallel (= 1.12.1)
   selenium-webdriver (= 3.6.0)
 
 RUBY VERSION
-   ruby 2.4.4p296
+   ruby 2.5.1p57
 
 BUNDLED WITH
    1.16.2

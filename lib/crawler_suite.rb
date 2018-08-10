@@ -6,9 +6,12 @@ class CrawlerSuite
   end
 
   def run
-    driver = WebDriver.new
     crawlers.each do |klass|
       klass.new(web_driver: driver).run
     end
+  end
+
+  def driver
+    Thread.current[:web_driver] ||= WebDriver.new
   end
 end
